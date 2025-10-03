@@ -1,0 +1,3 @@
+function tinhTong() {
+  return;
+}
