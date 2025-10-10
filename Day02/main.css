@@ -34,8 +34,12 @@ form {
       border: none;
       background-color: #3a5b22;
       color: white;
-      transition: all ease-in-out 0.5s;
       cursor: pointer;
+      transition: all ease-in-out 0.5s;
+      -webkit-transition: all ease-in-out 0.5s;
+      -moz-transition: all ease-in-out 0.5s;
+      -ms-transition: all ease-in-out 0.5s;
+      -o-transition: all ease-in-out 0.5s;
     }
     button:hover {
       opacity: 0.7;
@@ -77,4 +81,23 @@ form {
     border-top-left-radius: 60px;
     border-bottom-left-radius: 60px;
   }
+}
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px auto;
+  font-weight: 600;
+  color: #d9d9d9;
+  p {
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+  }
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1 1 0;
+  height: 1px;
+  background-color: black;
 }
