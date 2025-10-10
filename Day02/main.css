@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Tong quan-> chi tiet */
+/* CSS bo cuc (layout, kich thuoc) truoc, phong cach sau (phong chu, mau sac, .v.v.)*/
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+form {
+  width: 404px;
+  margin: 0 auto;
+  .form-control {
+    margin-bottom: 24px;
+    button {
+      width: 100%;
+      padding: 6px;
+      border-radius: 6px;
+      border: none;
+      background-color: #3a5b22;
+      color: white;
+      transition: all ease-in-out 0.5s;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.7;
+    }
+  }
+
+  input,
+  label {
+    width: 100%;
+  }
+
+  label {
+    margin-bottom: 6px;
+  }
+
+  input {
+    padding: 6px;
+    border-radius: 6px;
+  }
+
+  .checkbox {
+    width: initial;
+  }
+  .oath-group,
+  .or,
+  .sub-link {
+    text-align: center;
+  }
+}
+
+.brand {
+  width: 50%;
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
