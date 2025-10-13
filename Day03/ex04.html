@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 04 - Pseudo Class</title>
+    <style>
+      a:visited {
+        color: violet;
+      }
+      input:focus {
+        border: 2px solid red;
+      }
+      input::placeholder {
+        color: green;
+        font-weight: 900;
+      }
+      input {
+        font-weight: 400;
+        color: red;
+      }
+
+      ol > :first-child {
+        background-color: pink;
+      }
+
+      ol > :last-child {
+        background-color: orange;
+      }
+
+      ol > li:nth-of-type(3) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="htpps://google.com">Google</a>
+    <a href="https://facebook.com">Facebook</a>
+    <a href="htpps://twitter.com">twitter</a>
+    <form action="">
+      <input type="text" placeholder="email" />
+    </form>
+
+    <ol>
+      <li>item 01</li>
+      <li>item 02</li>
+      <span>span</span>
+      <li>item 03</li>
+      <li>item 04</li>
+      <li>item 05</li>
+    </ol>
+  </body>
+</html>

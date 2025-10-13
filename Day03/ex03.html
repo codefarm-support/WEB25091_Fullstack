@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        border: 5px solid blue;
+        padding: 10px;
+        background-color: yellow;
+        width: 60px;
+        height: 60px;
+      }
+      .p1 {
+        box-sizing: border-box;
+        /* * 60px = border + padding + content */
+        /* content = 60 - 5*2 - 10*2 = 30px */
+        /* Luôn tính toán được tổng không gian mà phần tử chiếm chỗ */
+      }
+      .p2 {
+        box-sizing: content-box;
+        /* default value */
+        /* 60px  = content */
+        /* Thực tế phần tử đã chiếm vùng không gian = 60px + 5*2 + 10*2 = 90px */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p class="p1">Lorem, ipsum dolor.</p>
+      <p class="p2">Lorem, ipsum dolor.</p>
+    </div>
+  </body>
+</html>

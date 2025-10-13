@@ -1,0 +1,51 @@
+* {
+  /* reset css */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* khai bao bien */
+  --primary-color: rgba(2, 2, 167, 0.849);
+  --secondary-color: rgba(41, 41, 176, 0.781);
+}
+
+html {
+  /* Dat nhung thuoc tinh dung chung va ke thua vao day */
+  font-size: 16px;
+  font-family: "Times New Roman" serif;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--secondary-color);
+}
+
+/* div#myDiv-2 > p {
+  background-color: yellow;
+} */
+
+div + p {
+  background-color: red;
+}
+
+p ~ ul {
+  background-color: green;
+}
+
+label,
+input {
+  width: 100%;
+}
+
+a[target] {
+  color: #333;
+}
+
+a[href^="https"] {
+  background-color: green;
+}
