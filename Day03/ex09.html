@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 100px auto;
+        position: relative;
+        background-color: yellow;
+        position: relative;
+      }
+      p {
+        position: absolute;
+        top: -25px;
+        right: 50%;
+        transform: translateX(50%);
+      }
+      div::before,
+      div::after {
+        content: "";
+        width: 44%;
+        height: 1px;
+        display: inline-block;
+        background-color: #333;
+        position: absolute;
+      }
+
+      div::before {
+        top: 0;
+        right: 0;
+      }
+      div::after {
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Orr</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        background-color: yellow;
+        width: 120px;
+        height: 60px;
+      }
+      /* tat ca pseudo-element deu la inline */
+      p::before {
+        content: "Noi dung before";
+        background-color: orange;
+        padding: 10px;
+        margin: 10px;
+      }
+      p::after {
+        content: "Noi dung after";
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Noi dung the p</p>
+  </body>
+</html>
