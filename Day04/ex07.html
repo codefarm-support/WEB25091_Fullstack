@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+      }
+      .cir {
+        width: 40px;
+        height: 40px;
+        background-color: yellow;
+        position: absolute;
+        border-radius: 50%;
+      }
+      .cir:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+      .cir:nth-child(2) {
+        top: 0;
+        right: 0;
+      }
+      .cir:nth-child(3) {
+        bottom: 0;
+        left: 0;
+      }
+      .cir:nth-child(4) {
+        bottom: 0;
+        right: 0;
+      }
+      .center {
+        width: 40px;
+        height: 40px;
+        background-color: green;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="cir"></div>
+      <div class="cir"></div>
+      <div class="cir"></div>
+      <div class="cir"></div>
+      <div class="center"></div>
+    </div>
+  </body>
+</html>

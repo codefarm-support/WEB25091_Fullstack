@@ -1,0 +1,12 @@
+/* COMMON CSS: BEGIN */
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  transition: all ease-in 0.3;
+  cursor: pointer;
+}
+
+/* COMMON CSS: END */
