@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+      
+        Cái gì thì nên đặt class, id?
+        - Hạn chế dùng id, trừ khi phần tử đó là duy nhất.
+        - Dùng class trong đa số trường hợp nhưng không cần thiết dùng class cho các phần tử con ít quan trọng.
+
+        Cái gì thì nên chọn chung chung, tổng quan, cái gì thì nên viết càng cụ thể càng tốt?
+        - thuộc tính hoặc phần tử không có đặc thù: font, màu đặc trưng brand, các hiệu ứng chung: hover, focus, ...
+
+        Cái gì thì !important
+        Chỉ dùng để hot-fix, ghi đè thư viện...
+      */
+
+      #hot > p {
+      }
+
+      .product > h3 {
+      }
+
+      button {
+        transition: all ease-in-out 0.5s;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 1px solid blue;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      .btn.btn-danger {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="hot">
+      <h2>Tieu de</h2>
+      <p class="desc">mo ta</p>
+    </section>
+    <button>click me!</button>
+    <button class="btn btn-danger">SOS!</button>
+
+    <section>
+      <h2>Tieu de</h2>
+      <p class="desc">mo ta</p>
+    </section>
+
+    <div class="product">
+      <h3 class="title-product">Ten san pham</h3>
+      <p class="price">price: 2000</p>
+      <img class="" src="" alt="" />
+    </div>
+  </body>
+</html>

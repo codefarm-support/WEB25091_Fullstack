@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors: Peusedo Element</title>
+    <style>
+      h1::after {
+        content: "conten after";
+      }
+      h1::before {
+        content: "content before";
+      }
+      /* 
+        1. Không mang ngữ nghĩa nội dung tách biệt mà là 1 phần của phần tử khác.
+        2. Không có ý nghĩa cho SEO.
+        3. Chỉ nhằm mục đích thị giác hoặc trải nghiệm.
+        4. Không muốn người dùng chọn, focus, copy phần tử giả (phần tử ảo) này.
+      */
+
+      p::first-letter {
+        font-size: 44px;
+      }
+
+      p::first-line {
+        font-weight: 900;
+        color: red;
+      }
+      input::placeholder {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Noi dung the h1</h1>
+    <span>Phia sau</span>
+    <p>Gửi liên hợp quốc!</p>
+    <p>Tôi là Lương Bằng Quang</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nam autem
+      officiis voluptas vero impedit quas? Rem repellendus esse non eius
+      deleniti autem, illum vero nisi, nihil dicta quam dolor sit laudantium,
+      seMollitia, quas labore.
+    </p>
+    <input type="text" placeholder="Vui long dang ky nhan tin.." />
+    <p></p>
+  </body>
+</html>
