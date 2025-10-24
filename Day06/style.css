@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    align-items: center;
+    a {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+  .banner {
+    width: 100%;
+  }
+}
+
+main {
+  margin: 62px 0px;
+  .champ-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    /* margin: 0 24px; */
+    flex-wrap: wrap;
+    .champ-card {
+      display: flex;
+      flex-direction: column;
+      width: 328px;
+      flex-grow: 1;
+      flex-shrink: 1;
+      p {
+        background-color: #0e4c67;
+        padding: 28px 0px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+footer {
+  background-color: #0e4c67;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  justify-content: space-between;
+  padding: 24px;
+  form {
+    display: flex;
+    gap: 5px;
+    button {
+      background-color: #ffa800;
+      padding: 16px 15px;
+      border: none;
+      color: #ffffff;
+      border-radius: 5px;
+    }
+    input {
+      outline: none;
+      padding: 16px 15px;
+      background-color: transparent;
+      border: 2px solid #ffa800;
+      border-radius: 5px;
+    }
+    input::placeholder {
+      color: #ffffff;
+    }
+  }
+}
