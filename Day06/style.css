@@ -8,6 +8,12 @@ a {
   text-decoration: none;
   color: black;
 }
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -32,18 +38,18 @@ main {
   margin: 62px 0px;
   .champ-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 32px;
-    /* margin: 0 24px; */
     flex-wrap: wrap;
     .champ-card {
-      display: flex;
-      flex-direction: column;
       width: 328px;
-      flex-grow: 1;
-      flex-shrink: 1;
+      max-width: 400px;
+      flex: 1 1 328px;
+      background-color: #0e4c67;
+      /* responsive cho màn 1440px */
+
       p {
-        background-color: #0e4c67;
         padding: 28px 0px;
         text-align: center;
         color: white;

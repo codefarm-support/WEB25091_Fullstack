@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        /* code layout, tổng quan trước */
+        /* code đặc tính, chi tiết sau */
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+        justify-content: space-between;
+        /* align-content: space-between; */
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        border: 2px solid green;
+        background-color: yellowgreen;
+      }
+      .item {
+        width: 60px;
+        height: 200px;
+        border: 1px solid red;
+        background-color: pink;
+      }
+
+      .item:nth-child(1) {
+      }
+
+      .item:nth-child(2) {
+        align-self: flex-start;
+        order: -2;
+      }
+
+      /* order: 0 - default value */
+      .item:nth-child(3) {
+        order: -1;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item">item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <!-- <div class="item">item 04</div>
+      <div class="item">item 05</div>
+      <div class="item">item 06</div> -->
+    </div>
+  </body>
+</html>
