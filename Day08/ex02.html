@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .products {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .product {
+        min-width: 220px;
+        flex: 1 1 220px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      /* break point */
+      @media screen and (max-width: 992px) {
+        .products {
+          gap: 20px;
+        }
+
+        .product {
+          min-width: calc((100% - 30px) / 2);
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .products {
+          gap: 10px;
+        }
+
+        .product {
+          min-width: calc((100% - 20px) / 2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="products">
+      <div class="product">
+        <div class="product-img">
+          <img src="https://picsum.photos/200/240" alt="product-abc" />
+        </div>
+        <div class="product-content">
+          <h3>Syltherine</h3>
+          <p class="product-desc">Stylish cafe chair</p>
+          <p>
+            <span>Rp 2.500.000</span>
+            <span>Rp 3.500.000</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <img src="https://picsum.photos/200/240" alt="product-abc" />
+        </div>
+        <div class="product-content">
+          <h3>Syltherine</h3>
+          <p class="product-desc">Stylish cafe chair</p>
+          <p>
+            <span>Rp 2.500.000</span>
+            <span>Rp 3.500.000</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <img src="https://picsum.photos/200/240" alt="product-abc" />
+        </div>
+        <div class="product-content">
+          <h3>Syltherine</h3>
+          <p class="product-desc">Stylish cafe chair</p>
+          <p>
+            <span>Rp 2.500.000</span>
+            <span>Rp 3.500.000</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <img src="https://picsum.photos/200/240" alt="product-abc" />
+        </div>
+        <div class="product-content">
+          <h3>Syltherine</h3>
+          <p class="product-desc">Stylish cafe chair</p>
+          <p>
+            <span>Rp 2.500.000</span>
+            <span>Rp 3.500.000</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <img src="https://picsum.photos/200/240" alt="product-abc" />
+        </div>
+        <div class="product-content">
+          <h3>Syltherine</h3>
+          <p class="product-desc">Stylish cafe chair</p>
+          <p>
+            <span>Rp 2.500.000</span>
+            <span>Rp 3.500.000</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <img src="https://picsum.photos/200/240" alt="product-abc" />
+        </div>
+        <div class="product-content">
+          <h3>Syltherine</h3>
+          <p class="product-desc">Stylish cafe chair</p>
+          <p>
+            <span>Rp 2.500.000</span>
+            <span>Rp 3.500.000</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <img src="https://picsum.photos/200/240" alt="product-abc" />
+        </div>
+        <div class="product-content">
+          <h3>Syltherine</h3>
+          <p class="product-desc">Stylish cafe chair</p>
+          <p>
+            <span>Rp 2.500.000</span>
+            <span>Rp 3.500.000</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <img src="https://picsum.photos/200/240" alt="product-abc" />
+        </div>
+        <div class="product-content">
+          <h3>Syltherine</h3>
+          <p class="product-desc">Stylish cafe chair</p>
+          <p>
+            <span>Rp 2.500.000</span>
+            <span>Rp 3.500.000</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
