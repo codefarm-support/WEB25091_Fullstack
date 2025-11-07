@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid green;
+        background-color: yellowgreen;
+      }
+
+      .box-1 {
+        position: relative;
+        transform: translate(50%, 50%);
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+
+      .box-2 {
+        transform: scale(1.5) skew(45deg);
+      }
+
+      .box-3 {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-1"></div>
+    <div class="box box-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+      quos.
+    </div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+  </body>
+</html>

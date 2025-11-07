@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        /* filter: blur(5px); */
+        transition: all ease-in-out 0.5s;
+        filter: blur(5px) brightness();
+      }
+      img:hover {
+        filter: blur(0px) brightness()
+          drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://picsum.photos/300/200" alt="" />
+  </body>
+</html>

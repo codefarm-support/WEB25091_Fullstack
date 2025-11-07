@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 2px solid brown;
+        background-color: yellow;
+        position: relative;
+      }
+
+      .wheel {
+        background-color: red;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        bottom: calc(300px - 60px);
+        right: calc(300px - 60px);
+        transition: all ease-in-out 2s;
+      }
+
+      /* transition / position */
+
+      .box:hover > .wheel {
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="wheel">wheel</div>
+    </div>
+  </body>
+</html>
