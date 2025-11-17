@@ -27,3 +27,9 @@ console.log(pi);
  * - có hoisting nhưng giá trị bị rơi vào vùng TDZ và không thể truy cập trước khai báo.
  * - có phạm vi hoạt động là block scope
  */
+
+/**
+ * var: Không khuyến khích sử dụng, còn dùng vì lý do tương thích ngược.
+ * let: dùng để khai báo biến có thể thay đổi được.
+ * const: dùng để khai báo các hằng số hoặc các kiểu dữ liệu tham chiếu.
+ */
