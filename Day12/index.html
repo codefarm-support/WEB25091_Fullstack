@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Cach 1: dung script voi src: external file js -->
+    <script src="./ex02.js"></script>
+
+    <script>
+      // Cach 2: Viet trong cap the script (ngay trong file html)
+      // code js o day
+      console.log("hihihi");
+      console.warn("Day la 1 canh bao");
+      console.error("Day la 1 thong bao loi");
+      console.info("Day la 1 thong tin");
+      console.dir({ name: "Hoang" });
+      console.table({ name: "Hoang" });
+    </script>
+
+    <script src="./ex01.js">
+      // code js o day?
+      console.log("run!");
+    </script>
+  </body>
+</html>
