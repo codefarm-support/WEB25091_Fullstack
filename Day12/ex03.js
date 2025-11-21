@@ -9,6 +9,14 @@ if (true) {
 // console.log(myName);
 
 /**
+ * Khái báo với var:
+ * - Có thể khai báo lại.
+ * - Có thể gán lại.
+ * - Có thể gọi trước khi khai báo (hoisting) nhưng không nhận được giá trị (undefined).
+ * - var có phạm vi sử dụng là global scope.
+ */
+
+/**
  * Khai bao voi let
  * - không khai báo lại được (trong cùng 1 block scope).
  * - gán lại được.

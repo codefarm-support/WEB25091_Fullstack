@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      if (3 > 2) {
+        console.log(`3 thi lon hon 2`);
+      }
+      if ("Hoang") {
+        console.log(`run~!`);
+      }
+
+      if ("") {
+        console.log(`run 2~!`);
+      }
+      if (0) {
+        console.log(`khogn chay`);
+      }
+
+      let x = 0;
+
+      // * Hoi xem x co = 0 khong? neu bang thi in ra x?
+      if (x === 0) {
+        console.log(x);
+      }
+
+      let thoiTiet = "mua";
+      if (thoiTiet === "mua") {
+        console.log("nghi hoc!");
+      } else {
+        console.log("di hoc");
+      }
+
+      if (thoiTiet === "mua") {
+        console.log("nghi hoc!");
+      } else if ((thoiTiet = "nang")) {
+        console.log("Di choi!");
+      } else {
+        // * khong mua, khong nang
+        console.log("di hoc");
+      }
+
+      // Thuong dung if cho cac truong hop:
+      // 1. Dieu kien ro rang (thuong co the quy ve true/false)
+      // 2. Có ít trường hợp.
+
+      //  * falsy values:
+      //  * false
+      //  * 0
+      //  * ""
+      //  * NaN
+      //  * undefined
+      //  * null
+    </script>
+    <script src="./ex01.js"></script>
+  </body>
+</html>

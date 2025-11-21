@@ -3,10 +3,10 @@ console.log(i++);
 console.log(i);
 
 /**
- * Hậu tố:
+ * * Hậu tố:
  * - Thực hiện biểu thức với giá trị hiện tại của biến trước, sau đó cập nhật sau.
  *
- * Tiền tố:
+ * * Tiền tố:
  * - Thực hiện cập nhật giá trị của biến trước, sau đó sử dụng giá trị mới này.
  */
 
