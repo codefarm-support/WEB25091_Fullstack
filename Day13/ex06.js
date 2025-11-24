@@ -30,8 +30,6 @@ let i = 1;
 
 // * yeu cau nguoi dung nhap tu ban phim so > 0 neu nguoi dung nhap so < 0 yeu cau nhap lai
 // * bat buoc phai la so
-// * goi y su dung : while
-
 let n = Number(window.prompt("nhap so:"));
 while (isNaN(n) || n <= 0) {
   n = window.prompt("So khong hop le, nhap lai:");
