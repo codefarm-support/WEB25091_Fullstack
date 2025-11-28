@@ -3,9 +3,9 @@ const arr = [
   { id: 2, title: "product B", price: 300 },
   { id: 3, title: "product C", price: 400 },
   { id: 4, title: "product D", price: 800 },
-  { id: 4, title: "product E", price: 600 },
-  { id: 4, title: "product F", price: 700 },
-  { id: 4, title: "product G", price: 100 },
+  { id: 5, title: "product E", price: 600 },
+  { id: 6, title: "product F", price: 700 },
+  { id: 7, title: "product G", price: 100 },
 ];
 
 // * Viết hàm sortToCheapest(n, arr)
@@ -16,7 +16,7 @@ const arr = [
 function sortToCheapest(n, arr) {
   let temp = 0;
   let arr2 = [];
-  if (n !== 0 && n < arr.length) {
+  if (n !== 0 && n <= arr.length) {
     for (let i = 0; i <= n; i++) {
       for (let j = 0; j < arr.length; j++) {
         if (arr[j]?.price > arr[j + 1]?.price) {
@@ -42,4 +42,4 @@ function sortToCheapest(n, arr) {
   return; //...
 }
 
-sortToCheapest(3, arr); // => ?
+sortToCheapest(7, arr); // => ?
