@@ -16,7 +16,14 @@ const students2 = [
   { id: 3, name: "Dam", age: 23, gender: "male", score: 9.6 },
 ];
 
-let content = /*html */ `<table>
+function perf(score) {
+  if (score < 7) return "average";
+  if (score >= 9) return "excellent";
+  return "good";
+}
+let content =
+  /*html */
+  `<table>
   <thead>
     <tr>
       <th>ID</th>
@@ -27,16 +34,10 @@ let content = /*html */ `<table>
       <th>Perf</th>
     </tr>
   </thead>
-<tbody>`;
-
-function perf(score) {
-  if (score < 7) return "average";
-  if (score >= 9) return "excellent";
-  return "good";
-}
-
-students2.forEach((item, index) => {
-  content += /*html */ `<tr>
+<tbody>;
+${students2
+  .map((item, index) => {
+    return `<tr style="${item.score >= 9 ? "background-color: green" : ""} ">
     <td>${item.id}</td>
     <td>${item.name}</td>
     <td>${item.age}</td>
@@ -44,12 +45,10 @@ students2.forEach((item, index) => {
     <td>${item.score}</td>
     <td>${perf(item.score)}</td> //??
   </tr>`;
-});
-
-content += /*html*/ `
-    </tbody>
-  </table>
-`;
+  })
+  .join("")}
+  </tbody>
+  </table>`;
 
 document.write(content);
 
