@@ -11,3 +11,26 @@ const students = ["Hoang", "Hoa", "Trung", "Dung", "Tien", "Huy"];
  */
 
 console.log();
+
+function randomStudents(students) {
+  const length = students.length;
+  return students[Math.floor(Math.random() * length)];
+}
+
+console.log(randomStudents(students));
+
+/**
+ * Làm tròn với Mạth
+ * * Floor:
+ * ! Làm tròn xuống, trả về nguyên
+ * * Trunc:
+ * ! Làm tròn bằng cách bỏ đi phần thập phân. (khác so với floor khi làm việc với số âm)
+ * * Ceil:
+ * ! Luôn làm tròn lên.
+ * * Round:
+ * ! Làm tròn tới số nguyên gần nhất (trường hợp đúng bằng 0.5 thì làm tròn lên)
+ */
+
+console.log(Math.floor(-10.9));
+console.log(Math.trunc(-10.9));
+console.log(Math.ceil(10.001));
