@@ -27,6 +27,7 @@ fetch("https://dummyjson.com/products?skip=0&limit=12")
     data.products.forEach((item) => {
       content += /*html */ `
         <div>
+        <<img src="${item.thumbnail}" alt="" />
           <h2>${item.title}</h2>
           <p>Price: ${item.price}</p>
           <button>Them vao gio hang</button>
