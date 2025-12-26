@@ -20,6 +20,8 @@ console.log("Viec 2");
  * trả về 1 promise
  */
 
+const cart = [];
+
 fetch("https://dummyjson.com/products?skip=0&limit=12")
   .then((res) => res.json())
   .then((data) => {
@@ -27,12 +29,17 @@ fetch("https://dummyjson.com/products?skip=0&limit=12")
     data.products.forEach((item) => {
       content += /*html */ `
         <div>
-        <<img src="${item.thumbnail}" alt="" />
+        <img src="${item.thumbnail}" alt="" />
           <h2>${item.title}</h2>
           <p>Price: ${item.price}</p>
-          <button>Them vao gio hang</button>
+          <button onclick="">Them vao gio hang</button>
         </div>
       `;
     });
     document.write(content);
+  })
+  .catch(() => {
+    document.write("Khong co san pham nao!");
   });
+
+console.log("viec nao do!");
