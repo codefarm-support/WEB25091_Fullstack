@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="product">
+      <h2 id="product-title" class="product-name">Iphone</h2>
+      <p>Price: 2000</p>
+    </div>
+
+    <div class="product">
+      <h2 id="product-title" class="product-name">Iphone</h2>
+      <p>Price: 2000</p>
+    </div>
+    <script>
+      const myDocument = {
+        html: {
+          head: {
+            meta: {
+              name: {
+                texNode: "viewport",
+              },
+            },
+          },
+
+          body: {
+            div: {
+              className: "product",
+              children: {
+                h2: {},
+                p: {},
+              },
+            },
+          },
+        },
+      };
+
+      // console.log(myDocument);
+      // console.log({ document });
+    </script>
+
+    <script src="./ex01.js"></script>
+  </body>
+</html>

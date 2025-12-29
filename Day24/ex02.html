@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+
+          <h2>
+            
+            
+               noi dung the h2</h2>
+    </div>
+    <script>
+      const h1Ele = document.createElement("h1");
+      h1Ele.innerText = "Noi dung the h1";
+      document.body.appendChild(h1Ele);
+      setTimeout(() => {
+        document.body.removeChild(h1Ele);
+      }, 3000);
+    </script>
+
+    <script src="./ex02.js"></script>
+  </body>
+</html>
