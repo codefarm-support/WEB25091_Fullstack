@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="register-form">
+      <div>
+        <label for="">name</label>
+        <input type="text" name="name" />
+      </div>
+      <div>
+        <label for="">Email</label>
+        <input type="text" name="email" />
+      </div>
+      <div>
+        <label for="">age</label>
+        <input type="number" name="age" />
+      </div>
+      <div>
+        <label for="">Chuyen nganh</label>
+        <select name="major" id="">
+          <option value=""></option>
+          <option value="CNTT">CNTT</option>
+          <option value="TKDH">TKDH</option>
+        </select>
+      </div>
+      <button type="submit">Dang ky</button>
+      <button type="reset">Huy bo</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <td>STT</td>
+          <td>Ten</td>
+          <td>Email</td>
+          <td>Tuoi</td>
+          <td>Chuyen nganh</td>
+        </tr>
+      </thead>
+      <tbody id="students-table"></tbody>
+    </table>
+    <script src="./ex03.js"></script>
+  </body>
+</html>
